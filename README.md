@@ -1,5 +1,5 @@
 # API Training Workshop #1 - Rest
-The current workshop exercise implements header checker software middleware implementing the validator pattern.
+The current workshop exercise implements a header checker middleware making usage of the validator pattern.
 # Quickstart
 ### Install
 Required Technologies:
