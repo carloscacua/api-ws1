@@ -1,3 +1,12 @@
-# Springboot workshop 1
-Workshop 1 Springboot
-Use Get method on /header with or without platform header
+# API Training Workshop #1 - Rest
+The current workshop exercise implements header checker software middleware implementing the validator pattern.
+# Quickstart
+### Install
+Required Technologies:
+*  JAVA 1.8
+*  Spring Framework - Spring Boot 1.4
+
+### Usage
+
+* **Success Case:**  Call Rest method `Get` method on `http://localhost:8080/header` with `platform` header having the values **iOS** or **Android**
+* **Fail Case:** Remove `platform` header
