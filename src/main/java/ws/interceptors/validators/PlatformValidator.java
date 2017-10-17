@@ -1,7 +1,7 @@
-package WS.interceptors.validators;
+package ws.interceptors.validators;
 
-import WS.exceptions.BadRequestException;
-import WS.interceptors.IValidator;
+import ws.exceptions.BadRequestException;
+import ws.interceptors.IValidator;
 import org.springframework.stereotype.Component;
 
 

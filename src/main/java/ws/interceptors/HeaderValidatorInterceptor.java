@@ -1,4 +1,4 @@
-package WS.interceptors;
+package ws.interceptors;
 
 import org.apache.log4j.BasicConfigurator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,10 +21,10 @@ public class HeaderValidatorInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
 
-        for(IValidator validator : validators){
-            String header = httpServletRequest.getHeader(validator.headerKey());
-            validator.checkHeader(header);
-        }
+//        for(IValidator validator : validators){
+//            String header = httpServletRequest.getHeader(validator.headerKey());
+//            validator.checkHeader(header);
+//        }
         return super.preHandle(httpServletRequest, httpServletResponse, o);
     }
 

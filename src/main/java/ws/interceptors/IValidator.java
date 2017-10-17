@@ -1,4 +1,4 @@
-package WS.interceptors;
+package ws.interceptors;
 
 import org.springframework.stereotype.Component;
 

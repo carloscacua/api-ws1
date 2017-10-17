@@ -1,4 +1,4 @@
-package WS.config;
+package ws.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,9 +16,8 @@ public class SwaggerConfig {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("gs-rest-service.controllers"))
+                .apis(RequestHandlerSelectors.basePackage("WS"))
                 .paths(regex("/header.*"))
                 .build();
-
     }
 }
