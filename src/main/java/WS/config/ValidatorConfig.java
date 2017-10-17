@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @Configuration
-public class MyConfig extends WebMvcConfigurerAdapter {
+public class ValidatorConfig extends WebMvcConfigurerAdapter {
 
     @Autowired
     private HeaderValidatorInterceptor headerValidator;

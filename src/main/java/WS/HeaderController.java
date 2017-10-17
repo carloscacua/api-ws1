@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 public class HeaderController {
 
 
-    @RequestMapping("/header")
+    @RequestMapping(value = "/header", method = RequestMethod.GET)
     public String CheckHeader() {
         return "Success";
     }
