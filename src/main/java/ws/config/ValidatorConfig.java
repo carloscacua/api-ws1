@@ -14,6 +14,6 @@ public class ValidatorConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(headerValidator);
+        registry.addInterceptor(headerValidator).addPathPatterns("/header/**");
     }
 }
