@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 @Component
 public class HeaderValidatorInterceptor extends HandlerInterceptorAdapter {
 
-    static{
+    static {
         BasicConfigurator.configure();
     }
 
@@ -19,13 +19,13 @@ public class HeaderValidatorInterceptor extends HandlerInterceptorAdapter {
     private IValidator[] validators;
 
     @Override
-    public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
-//        for(IValidator validator : validators){
-//            String header = httpServletRequest.getHeader(validator.headerKey());
-//            validator.checkHeader(header);
-//        }
-        return super.preHandle(httpServletRequest, httpServletResponse, o);
+        for (IValidator validator : validators) {
+            String header = request.getHeader(validator.headerKey());
+            validator.checkHeader(header);
+        }
+        return super.preHandle(request, response, handler);
     }
 
 }
