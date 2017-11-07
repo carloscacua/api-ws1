@@ -8,5 +8,5 @@ Required Technologies:
 
 ### Usage
 
-* **Success Case:**  Call Rest method `Get` method on `http://localhost:8080/header` with `platform` header having the values **iOS** or **Android**
+* **Success Case:**  Call Rest method `Get` method on `http://localhost:8080/header/list` with `platform` header having the values **iOS** or **Android**
 * **Fail Case:** Remove `platform` header

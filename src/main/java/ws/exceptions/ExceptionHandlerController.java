@@ -1,4 +1,4 @@
-package WS.exceptions;
+package ws.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,10 +13,10 @@ import java.io.IOException;
 @ControllerAdvice
 public class ExceptionHandlerController {
     @ExceptionHandler(value = BadRequestException.class)
-    public ResponseEntity exception(BadRequestException ex,
+    public ResponseEntity exception(BadRequestException exception,
                                     HttpServletRequest request, HttpServletResponse response) throws IOException {
         return new ResponseEntity<>(
-                ex.getMessage(),
+                exception.getMessage(),
                 HttpStatus.BAD_REQUEST);
     }
 }

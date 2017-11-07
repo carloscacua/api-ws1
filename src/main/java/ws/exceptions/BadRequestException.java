@@ -1,4 +1,4 @@
-package WS.exceptions;
+package ws.exceptions;
 
 public class BadRequestException extends RuntimeException {
     public BadRequestException(String message) {
